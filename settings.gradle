@@ -1,0 +1,9 @@
+rootProject.name = 'gradle'
+
+
+include 'api'
+include 'db'
+include 'db:service'
+findProject(':db:service')?.name = 'service'
+include 'service'
+
